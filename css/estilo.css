@@ -1,0 +1,152 @@
+body {
+    background-color: red;
+}
+
+body {
+    background-color: white;
+}
+
+.padre {
+    background-color: red;
+    display: grid;
+    grid-gap: 15px;
+    padding: 15px;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr; 
+    grid-template-areas: 
+        "nombre nombre"
+        "contenido1 contenido2"
+        "pie pie";
+}
+
+.nombre {
+    background-color: orange;
+    grid-area: nombre;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.contenido1 {
+    background-color: orange;
+    grid-area: contenido1;
+    padding: 35px;
+}
+
+.contenido2 {
+    background-color: orange;
+    grid-area: contenido2;
+    padding: 35px; 
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+        "subcaja1 subcaja2"
+        "subcaja3 subcaja3";
+}
+
+.pie {
+    background-color: orange;
+    grid-area: pie;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.cara {
+    background-color: green;
+    display: grid;
+    grid-gap: 5px;
+    padding: 20px;
+    height: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "ojo1 ojo2"
+        "boca boca";
+}
+
+.ojo1 {
+    background-color: blue;
+    grid-area: ojo1;
+    width: 100px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%; 
+}
+
+.ojo2 {
+    background-color: blue;
+    grid-area: ojo2;
+    width: 100px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+}
+
+
+.boca {
+    background-color: blue;
+    grid-area: boca;
+    display: grid;
+    grid-gap: 7px;
+    width: 400px;
+    height: 100px;
+    justify-self: center;
+    align-self: center;
+    padding: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-radius: 100px; 
+}
+
+.d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8 {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.subcaja1 {
+    background-color: green;
+    grid-area: subcaja1;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.subcaja2 {
+    background-color: green;
+    grid-area: subcaja2;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.subcaja3 {
+    background-color: darkgreen;
+    grid-area: subcaja3;
+    color: orange;
+    text-align: center;
+    padding: 25px;
+}
+
+.ovalo1 {
+    background-color: blue;
+    width: 70px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.ovalo2 {
+    background-color: blue;
+    width: 70px;
+    height: 120px;
+    border-radius: 50%;
+}
